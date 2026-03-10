@@ -45,10 +45,10 @@ const Contact = () => {
         e.preventDefault();
         setIsLoading(true);
 
-        // Replace these with your actual EmailJS IDs from your account
-        const SERVICE_ID = "service_c88kyft"; // Replace with your Service ID
-        const TEMPLATE_ID = "template_nvve4dn"; // Replace with your Template ID
-        const PUBLIC_KEY = "JnuXpDeIksxDOyW2Y"; // Replace with your Public Key
+        // Using environment variables for better security (configured in Vercel)
+        const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+        const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
             .then((result) => {
