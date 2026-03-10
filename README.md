@@ -2,6 +2,9 @@
 
 Personal Portfolio Website built with **React** and **Vite**.
 
+## Live Website
+https://bharani-dev.vercel.app/
+
 ## ✨ Features
 - **Silky Transitions**: Custom scanline and sweep effects.
 - **Email Integration**: Live contact form powered by EmailJS.
