@@ -42,7 +42,7 @@ const Projects = () => {
         },
         {
             id: 2,
-            title: 'SpringMart — Backend E-Commerce API',
+            title: 'SpringMart — Backend E-Commerce',
             type: 'Backend Project',
             description: [
                 'Developed RESTful backend using Spring Boot and Spring MVC',

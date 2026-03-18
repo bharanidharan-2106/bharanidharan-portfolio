@@ -109,11 +109,11 @@ const Contact = () => {
                                 </div>
                             </a>
 
-                            <a href="https://github.com/Bharanidharan-21" target="_blank" rel="noopener noreferrer" className="endpoint-card">
+                            <a href="https://github.com/bharanidharan-2106" target="_blank" rel="noopener noreferrer" className="endpoint-card">
                                 <div className="endpoint-icon"><FiGithub /></div>
                                 <div className="endpoint-details">
                                     <span className="endpoint-label">GitHub</span>
-                                    <span className="endpoint-value">github.com/Bharanidharan-21</span>
+                                    <span className="endpoint-value">github.com/bharanidharan-2106</span>
                                 </div>
                             </a>
                         </div>
