@@ -38,7 +38,7 @@ const Projects = () => {
                 'Integrated MySQL for persistent data storage'
             ],
             techStack: ['Java', 'JDBC', 'MySQL'],
-            githubLink: 'https://github.com/Bharanidharan-21/eShop-Java',
+            githubLink: 'https://github.com/bharanidharan-2106/eShop-Java-Console-Application',
         },
         {
             id: 2,
@@ -52,7 +52,7 @@ const Projects = () => {
                 'Tested endpoints using Postman'
             ],
             techStack: ['Spring Boot', 'Spring Security', 'REST API', 'MySQL'],
-            githubLink: 'https://github.com/Bharanidharan-21/SpringMart--backend',
+            githubLink: 'https://github.com/bharanidharan-2106/springmart-ecommerce-backend',
         },
         {
             id: 3,
@@ -65,7 +65,7 @@ const Projects = () => {
                 'Integrated printing services and real-time session tracking'
             ],
             techStack: ['MongoDB', 'Express', 'React', 'Node.js'],
-            githubLink: 'https://github.com/Bharanidharan-21/Cyber-Cafe',
+            githubLink: 'https://github.com/bharanidharan-2106/Cyber-Cafe',
         }
     ];
 
