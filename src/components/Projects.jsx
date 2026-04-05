@@ -4,6 +4,7 @@ import { FiGithub, FiExternalLink, FiActivity } from 'react-icons/fi';
 
 const Projects = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const [showAll, setShowAll] = useState(false);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -66,15 +67,30 @@ const Projects = () => {
             ],
             techStack: ['MongoDB', 'Express', 'React', 'Node.js'],
             githubLink: 'https://github.com/bharanidharan-2106/Cyber-Cafe',
+        },
+        {
+            id: 4,
+            title: 'Finance Data Processing & Access Control Backend',
+            type: 'Backend Project',
+            description: [
+                'Built production-grade RESTful backend using Spring Boot with clean architecture for secure financial record management',
+                'Implemented role-based access control (RBAC) with JWT authentication and Spring Security',
+                'Developed features for financial record lifecycle, pagination, sorting, and bulk creation',
+                'Engineered dashboard analytics including total income/expense, trends, and category aggregations'
+            ],
+            techStack: ['Java', 'Spring Boot', 'Spring Security', 'JWT', 'PostgreSQL'],
+            githubLink: 'https://github.com/bharanidharan-2106/financeapp',
         }
     ];
+
+    const displayedProjects = showAll ? projectData : projectData.slice(0, 3);
 
     return (
         <section id="projects" className="section-container">
             <h2 className="section-title">Projects</h2>
 
             <div className="projects-grid">
-                {projectData.map((project, index) => (
+                {displayedProjects.map((project, index) => (
                     <div
                         key={project.id}
                         className={`project-card card ${isVisible ? 'fade-in-up' : ''}`}
@@ -104,6 +120,14 @@ const Projects = () => {
                     </div>
                 ))}
             </div>
+
+            {projectData.length > 3 && (
+                <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+                    <button className="btn btn-outline" onClick={() => setShowAll(!showAll)}>
+                        {showAll ? 'View Less' : 'View More Projects'}
+                    </button>
+                </div>
+            )}
         </section>
     );
 };

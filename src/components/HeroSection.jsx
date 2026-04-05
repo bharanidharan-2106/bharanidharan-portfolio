@@ -74,7 +74,9 @@ const HeroSection = () => {
                     <div className="photo-glass-card animate-photo" style={{ animationDelay: '0.3s' }}>
                         <div className="code-tag">&lt;developer&gt;</div>
                         <div className="hero-profile-photo">
-                            <img src="/profile.jpeg" alt="Bharanidharan M" className="profile-img" />
+                            <div className="profile-img-inner">
+                                <img src="/new_pic.jpeg" alt="Bharanidharan M" className="profile-img" />
+                            </div>
                         </div>
                         <div className="code-tag">&lt;/developer&gt;</div>
                     </div>
