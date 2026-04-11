@@ -1,7 +1,7 @@
 import React from 'react';
 
 const FloatingSymbols = () => {
-    const symbols = ['{ }', '< >', '( )', '[ ]', '</>', 'import', ';', 'java', 'class'];
+    const symbols = ['{ }', '< >', '( )', '[ ]', '</>', 'import', ';', 'java', 'class', 'static', 'void'];
 
     // Create random positions and timings
     const items = Array.from({ length: 15 }).map((_, i) => ({

@@ -30,7 +30,7 @@ const Skills = () => {
         {
             id: 'languages',
             title: 'Languages',
-            skills: ['Java', 'Kotlin', 'Python', 'JavaScript', 'C']
+            skills: ['Java', 'C++', 'Kotlin', 'Python', 'JavaScript', 'C']
         },
         {
             id: 'backend',
@@ -40,7 +40,7 @@ const Skills = () => {
         {
             id: 'microservices',
             title: 'Microservices',
-            skills: ['Microservices Architecture', 'OpenFeign', 'Eureka', 'Swagger']
+            skills: ['Microservices Architecture', 'Spring Cloud', 'OpenFeign', 'Service Discovery (Eureka)', 'Circuit Breaker (Resilience4j)', 'Swagger / OpenAPI']
         },
         {
             id: 'databases',
@@ -50,7 +50,7 @@ const Skills = () => {
         {
             id: 'cloud',
             title: 'Cloud & DevOps',
-            skills: ['AWS', 'Docker']
+            skills: ['AWS', 'Docker', 'Containerization', 'CI/CD Basics']
         },
         {
             id: 'tools',
@@ -96,25 +96,7 @@ const Skills = () => {
                     ))}
                 </div>
 
-                {/* Current Focus Section */}
-                <div className={`current-focus-wrapper ${isVisible ? 'fade-in-up' : ''}`}>
-                    <div className="code-block-wrapper slide-up-animation">
-                        <div className="code-block-header">
-                            <span className="file-name">currentFocus.java</span>
-                            <span className="file-icon">☕</span>
-                        </div>
-                        <pre className="java-class-code">
-                            <code>
-                                <span className="keyword">public class</span> <span className="class-name">CurrentFocus</span> {'{\n'}
-                                {'\n'}
-                                <span className="code-tab"></span><span className="keyword">String</span> <span className="variable">learning</span>  = <span className="string">"Microservices architecture using Spring Cloud and Docker"</span>;{'\n'}
-                                <span className="code-tab"></span><span className="keyword">String</span> <span className="variable">building</span>  = <span className="string">"SpringMart E-commerce backend evolving into a microservices architecture"</span>;{'\n'}
-                                <span className="code-tab"></span><span className="keyword">String</span> <span className="variable">exploring</span> = <span className="string">"AWS deployment strategies for Spring Boot applications"</span>;{'\n'}
-                                {'}'}
-                            </code>
-                        </pre>
-                    </div>
-                </div>
+
             </div>
         </section>
     );

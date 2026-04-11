@@ -47,6 +47,7 @@ const About = () => {
                             <span className="code-tab"></span><span className="code-tab"></span><span className="string">"Java Developer"</span>,{'\n'}
                             <span className="code-tab"></span><span className="code-tab"></span><span className="string">"Backend Developer"</span>,{'\n'}
                             <span className="code-tab"></span><span className="code-tab"></span><span className="string">"Software Engineer"</span>{'\n'}
+                            <span className="code-tab"></span><span className="code-tab"></span><span className="string">"Full Stack Developer"</span>{'\n'}
                             <span className="code-tab"></span>{'};\n'}
                             {'\n'}
                             <span className="code-tab"></span><span className="keyword">String</span> <span className="variable">education</span> = <span className="string">"3rd Year CSE @ Kumaraguru College of Technology (CGPA: 7.99)"</span>;{'\n'}
