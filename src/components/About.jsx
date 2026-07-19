@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './About.css';
+import { FiBookOpen, FiLayers, FiServer, FiActivity } from 'react-icons/fi';
 
 const About = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -50,7 +51,7 @@ const About = () => {
                             <span className="code-tab"></span><span className="code-tab"></span><span className="string">"Full Stack Developer"</span>{'\n'}
                             <span className="code-tab"></span>{'};\n'}
                             {'\n'}
-                            <span className="code-tab"></span><span className="keyword">String</span> <span className="variable">education</span> = <span className="string">"3rd Year CSE @ Kumaraguru College of Technology (CGPA: 7.99)"</span>;{'\n'}
+                            <span className="code-tab"></span><span className="keyword">String</span> <span className="variable">education</span> = <span className="string">"4th Year CSE @ Kumaraguru College of Technology (CGPA: 8.01)"</span>;{'\n'}
                             <span className="code-tab"></span><span className="keyword">String</span> <span className="variable">focus</span> = <span className="string">"Backend systems, scalable applications, REST APIs"</span>;{'\n'}
                             <span className="code-tab"></span><span className="keyword">String</span> <span className="variable">sports</span> = <span className="string">"Hockey Player - KCT College Team"</span>;{'\n'}
                             {'\n'}
@@ -62,17 +63,35 @@ const About = () => {
                     </pre>
                 </div>
 
-                {/* Professional Bio */}
-                <div className="bio-container">
-                    <p className="bio-text">
-                        I am a 3rd-year Computer Science Engineering student at Kumaraguru College of Technology and an aspiring Java Full Stack Developer. I have a strong foundation in Object-Oriented Programming, Core Java, DBMS, and Spring Boot, and I enjoy building scalable backend systems and modern web applications.
-                    </p>
-                    <p className="bio-text">
-                        I focus on developing RESTful APIs, efficient database solutions, and responsive web interfaces using modern development practices.
-                    </p>
-                    <p className="bio-text">
-                        Beyond coding, I am an active hockey player representing the KCT college team, where I’ve developed teamwork, discipline, and strategic thinking—qualities that also strengthen my approach to software engineering.
-                    </p>
+                {/* Premium About Me Section */}
+                <div className="premium-about-container">
+                    <div className="about-badge">
+                        <FiBookOpen className="badge-icon" /> README.md
+                    </div>
+                    <div className="quote-icon-wrapper">
+                        <span className="quote-mark">"</span>
+                    </div>
+                    
+                    <div className="premium-about-content">
+                        <p>
+                            I am a final-year <span className="highlight-keyword">Computer Science Engineering</span> student at Kumaraguru College of Technology and an aspiring Java Full Stack Developer. I have a strong foundation in Object-Oriented Programming, Core Java, DBMS, and Spring Boot, and I enjoy building scalable <span className="highlight-keyword">Backend Development</span> systems and modern web applications.
+                        </p>
+                        <p>
+                            I focus on developing <span className="highlight-keyword">REST APIs</span>, efficient <span className="highlight-keyword">MySQL</span> database solutions, and responsive web interfaces using modern development practices, with a keen interest in exploring <span className="highlight-keyword">Microservices</span> architecture.
+                        </p>
+                        <p>
+                            Beyond coding, I am an active hockey player representing the KCT college team, where I’ve developed teamwork, discipline, and strategic thinking—qualities that also strengthen my approach to software engineering.
+                        </p>
+                    </div>
+
+                    <div className="tech-badges">
+                        <span className="tech-badge">Java</span>
+                        <span className="tech-badge">Spring Boot</span>
+                        <span className="tech-badge">MySQL</span>
+                        <span className="tech-badge">REST APIs</span>
+                        <span className="tech-badge">Backend</span>
+                        <span className="tech-badge">Microservices</span>
+                    </div>
                 </div>
 
             </div>

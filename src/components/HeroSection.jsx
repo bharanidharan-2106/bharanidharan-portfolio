@@ -39,8 +39,8 @@ const HeroSection = () => {
 
     return (
         <section id="home" className="hero-section fade-in">
+            <div className="hero-bg-shape"></div>
             <div className="section-container hero-container">
-
                 {/* Left Side: Developer Intro */}
                 <div className="hero-content">
                     <p className="hero-greeting animate-text" style={{ animationDelay: '0.1s' }}>Hello, I'm <span className="highlight-text">Bharanidharan M</span></p>
@@ -71,14 +71,8 @@ const HeroSection = () => {
 
                 {/* Right Side: Developer Illustration / Dashboard Mockup */}
                 <div className="hero-visual">
-                    <div className="photo-glass-card animate-photo" style={{ animationDelay: '0.3s' }}>
-                        <div className="code-tag">&lt;developer&gt;</div>
-                        <div className="hero-profile-photo">
-                            <div className="profile-img-inner">
-                                <img src="/new_pic.jpeg" alt="Bharanidharan M" className="profile-img" />
-                            </div>
-                        </div>
-                        <div className="code-tag">&lt;/developer&gt;</div>
+                    <div className="hero-profile-wrapper animate-photo" style={{ animationDelay: '0.3s' }}>
+                        <img src="/removebg-preview.png" alt="Bharanidharan M" className="profile-img-organic" />
                     </div>
                     <div className="dashboard-mockup animate-card" style={{ animationDelay: '0.4s' }}>
                         <div className="mockup-header">

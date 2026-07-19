@@ -16,6 +16,20 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
+.navbar.scrolled .nav-links a {
+    color: var(--text-secondary);
+    text-shadow: none;
+}
+
+.navbar.scrolled .nav-links a:hover,
+.navbar.scrolled .nav-links a.active {
+    color: var(--accent-color);
+}
+
+.navbar.scrolled .nav-links a::after {
+    background-color: var(--accent-color);
+}
+
 .navbar-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -44,17 +58,18 @@
 .nav-links a {
     font-family: var(--font-code);
     font-size: 0.95rem;
-    color: var(--text-secondary);
+    color: #F8FAFC; /* Light color for visibility over teal */
     position: relative;
     padding: 0.5rem 0;
     transition: color var(--transition-fast);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow in case it overlaps light bg */
 }
 
 .nav-links a:hover,
 .nav-links a.active,
 .mobile-menu a:hover,
 .mobile-menu a.active {
-    color: var(--accent-color);
+    color: #FFFFFF;
 }
 
 .nav-links a::after {
@@ -64,7 +79,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: var(--accent-color);
+    background-color: #FFFFFF;
     transition: width var(--transition-smooth);
 }
 
