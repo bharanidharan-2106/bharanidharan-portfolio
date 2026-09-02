@@ -8,9 +8,19 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingSymbols from './components/FloatingSymbols';
+import SplashScreen from './components/SplashScreen';
 
 function App() {
   const [isScanning, setIsScanning] = React.useState(false);
+  const [showSplash, setShowSplash] = React.useState(true);
+
+  React.useEffect(() => {
+    if (showSplash) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [showSplash]);
 
   const triggerScan = () => {
     setIsScanning(true);
@@ -18,8 +28,10 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      <Navbar onNavClick={triggerScan} />
+    <>
+      {showSplash && <SplashScreen onComplete={() => setShowSplash(false)} />}
+      <div className="app-container">
+        <Navbar onNavClick={triggerScan} />
       <FloatingSymbols />
       <main>
         <div id="home">
@@ -39,6 +51,7 @@ function App() {
         <div className="scanline-bar"></div>
       </div>
     </div>
+    </>
   );
 }
 

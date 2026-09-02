@@ -66,10 +66,13 @@
 }
 
 .nav-links a:hover,
-.nav-links a.active,
+.nav-links a.active {
+    color: #FFFFFF;
+}
+
 .mobile-menu a:hover,
 .mobile-menu a.active {
-    color: #FFFFFF;
+    color: var(--accent-color, #2A8C8C);
 }
 
 .nav-links a::after {

@@ -71,26 +71,18 @@ const About = () => {
                     <div className="quote-icon-wrapper">
                         <span className="quote-mark">"</span>
                     </div>
-                    
+
                     <div className="premium-about-content">
                         <p>
-                            I am a final-year <span className="highlight-keyword">Computer Science Engineering</span> student at Kumaraguru College of Technology and an aspiring Java Full Stack Developer. I have a strong foundation in Object-Oriented Programming, Core Java, DBMS, and Spring Boot, and I enjoy building scalable <span className="highlight-keyword">Backend Development</span> systems and modern web applications.
+                            I am a final-year <span className="highlight-keyword">Computer Science Engineering</span> student at Kumaraguru College of Technology (CGPA: 8.01) and an aspiring Java Full Stack Developer. I have a strong foundation in <span className="highlight-keyword">Object-Oriented Programming, Core Java, DBMS, Spring Boot, and Microservices</span>, and I enjoy building scalable backend systems and modern web applications.
                         </p>
                         <p>
-                            I focus on developing <span className="highlight-keyword">REST APIs</span>, efficient <span className="highlight-keyword">MySQL</span> database solutions, and responsive web interfaces using modern development practices, with a keen interest in exploring <span className="highlight-keyword">Microservices</span> architecture.
+                            I am passionate about <span className="highlight-keyword">Data Structures and Algorithms (DSA)</span> and regularly practice problem-solving to strengthen my coding skills. I have successfully solved <span className="highlight-keyword">180+ problems on LeetCode</span>, covering a range of fundamental data structures and algorithmic concepts.
                         </p>
                         <p>
-                            Beyond coding, I am an active hockey player representing the KCT college team, where I’ve developed teamwork, discipline, and strategic thinking—qualities that also strengthen my approach to software engineering.
+                            Beyond coding, I am an active hockey player representing the KCT college team, where I’ve developed <span className="highlight-keyword">teamwork, discipline, and strategic thinking</span>—qualities that also strengthen my approach to software engineering.
                         </p>
-                    </div>
 
-                    <div className="tech-badges">
-                        <span className="tech-badge">Java</span>
-                        <span className="tech-badge">Spring Boot</span>
-                        <span className="tech-badge">MySQL</span>
-                        <span className="tech-badge">REST APIs</span>
-                        <span className="tech-badge">Backend</span>
-                        <span className="tech-badge">Microservices</span>
                     </div>
                 </div>
 

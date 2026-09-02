@@ -49,11 +49,11 @@ const HeroSection = () => {
                     </h1>
 
                     <div className="hero-stack animate-text" style={{ animationDelay: '0.3s' }}>
-                        Java | Spring Boot | MySQL
+                        Java | Spring Boot
                     </div>
 
                     <p className="hero-description animate-text" style={{ animationDelay: '0.4s' }}>
-                        Computer Science Engineering student passionate about building scalable backend systems with <span className="highlight-text">Java</span> and <span className="highlight-text">Spring Boot</span> and creating modern full-stack web applications. Outside coding, I’m a college hockey team player.
+                        Computer Science Engineering student passionate about building scalable backend systems with <span className="highlight-text">Java</span> and <span className="highlight-text">Spring Boot</span> and creating modern full-stack web applications.
                     </p>
 
                     <div className="hero-buttons animate-text" style={{ animationDelay: '0.5s' }}>
@@ -73,29 +73,6 @@ const HeroSection = () => {
                 <div className="hero-visual">
                     <div className="hero-profile-wrapper animate-photo" style={{ animationDelay: '0.3s' }}>
                         <img src="/removebg-preview.png" alt="Bharanidharan M" className="profile-img-organic" />
-                    </div>
-                    <div className="dashboard-mockup animate-card" style={{ animationDelay: '0.4s' }}>
-                        <div className="mockup-header">
-                            <span className="dot dot-red"></span>
-                            <span className="dot dot-yellow"></span>
-                            <span className="dot dot-green"></span>
-                        </div>
-                        <div className="mockup-body">
-                            <pre className="code-snippet">
-                                <code>
-                                    <span className="code-keyword">package</span> dev.portfolio;{'\n'}
-                                    <span className="code-annotation">@RestController</span>{'\n'}
-                                    <span className="code-annotation">@RequestMapping</span>(<span className="code-string">"/api/dev"</span>){'\n'}
-                                    <span className="code-keyword">public class</span> <span className="code-class">PortfolioController</span> {'{'}{'\n'}
-                                    {'\n'}
-                                    <span className="code-tab"></span><span className="code-annotation">@GetMapping</span>(<span className="code-string">"/skills"</span>){'\n'}
-                                    <span className="code-tab"></span><span className="code-keyword">public</span> String <span className="code-method">skills</span>() {'{'}{'\n'}
-                                    <span className="code-tab"></span><span className="code-tab"></span><span className="code-keyword">return</span> <span className="code-string">"Java | Spring Boot | MySQL"</span>;{'\n'}
-                                    <span className="code-tab"></span>{'}'}{'\n'}
-                                    {'}'}
-                                </code>
-                            </pre>
-                        </div>
                     </div>
                 </div>
 
